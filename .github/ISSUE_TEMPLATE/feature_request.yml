@@ -1,0 +1,48 @@
+name: Feature Development
+description: Propose a new feature or improvement.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the feature and why it would benefit the project.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: What do you want to add?
+      description: Clearly describe the proposed feature.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Explain why this feature is needed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Suggested implementation
+      description: How could this feature work?
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be achieved for this task to be considered complete?
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Are there other tasks that must be completed first? Include issue links if known.
+    validations:
+      required: false
