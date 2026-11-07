@@ -1,0 +1,55 @@
+name: Bug Report
+description: Report a problem or unexpected behaviour.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please provide enough information
+        for the team to understand and reproduce the problem.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem clearly.
+      placeholder: Explain what went wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: How can someone else reproduce this problem?
+      placeholder: |
+        1. Open the game...
+        2. Go to...
+        3. Perform...
+        4. Observe the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include Unity version, operating system, device, etc.
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or additional information
+      description: Attach screenshots, videos or error logs if available.
+    validations:
+      required: false
