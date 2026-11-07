@@ -1,0 +1,57 @@
+name: Technical Task
+description: Propose or document a technical task.
+title: "[Task]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for technical work that is not necessarily
+        a bug fix or a new gameplay feature.
+
+  - type: textarea
+    id: task
+    attributes:
+      label: Task description
+      description: What exactly needs to be done?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope of work
+      description: What systems, files or components are involved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: List the important implementation requirements.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know this task is complete?
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What must be completed before this task can begin?
+    validations:
+      required: false
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing instructions
+      description: How should the completed work be tested?
+    validations:
+      required: false
