@@ -1,0 +1,68 @@
+
+name: Technical Proposal
+description: Propose changes to the game's architecture, systems, code structure, or technical approach.
+title: "[TECH PROPOSAL]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to suggest technical approaches or improvements.
+        This is for discussion and review, not an instruction to start implementation.
+        Please search existing issues before submitting.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Problem or Objective
+      description: What technical problem are you trying to solve, or what improvement do you suggest?
+      placeholder: Explain the problem or objective.
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed Technical Approach
+      description: Explain how you think the system should be designed or implemented.
+      placeholder: Describe your suggested architecture, system, or code structure.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Reasoning and Benefits
+      description: Why do you recommend this approach? What advantages does it offer?
+      placeholder: Explain the benefits and any possible disadvantages.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Affected Systems
+      description: Which parts of the game or existing code could this affect?
+      placeholder: For example, player movement, number cycle, gates, UI, or game manager.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Relevance to the Current Project
+      description: How important is this proposal for the current game?
+      options:
+        - Necessary for the current game
+        - Useful improvement
+        - Future consideration
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or Additional Notes
+      description: Include alternatives, risks, references, or supporting examples.
+      placeholder: Optional additional information.
+    validations:
+      required: false
